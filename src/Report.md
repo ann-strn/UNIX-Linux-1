@@ -293,9 +293,6 @@
 * Установите ncdu, выполнив команду "sudo apt-get install ncdu":
 ![Install ncdu](Screenshots/task_thirteen_install_ncdu.png)
 
-* Выполните команду "ncdu":
-![Check size of home and var](Screenshots/task_thirteen_var_home.png)
-
 * Вывести размер папок /home, /var, /var/log.:
 ![Check size of var/log](Screenshots/task_home.png)
 ![Check size of var/log](Screenshots/task_var.png)
