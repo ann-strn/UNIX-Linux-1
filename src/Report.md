@@ -102,9 +102,9 @@
 * Запишите в файл никнейм:
 ![Create a file with NANO](Screenshots/task_seven_create_a_file_with_nano.png)
   * Для выхода с сохранением изменений нажмите комбинацию "control" + "X", после нажмите "Y" и "Enter";
-
+<br>
 * Создать файл с редактором VIM, выполнив команду "vim test_vim.txt";
-
+ 
 * Записать в файл никнейм:
 ![Create a file with VIM](Screenshots/task_seven_create_a_file_with_vim.png)
   * Для выхода с сохранением изменений нажмите "esc" после записи ":wq" и нажмите "Enter";
