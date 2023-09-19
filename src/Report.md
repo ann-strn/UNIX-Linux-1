@@ -9,7 +9,7 @@
 
 ### Создать пользователя, отличного от пользователя, который создавался при установке. Пользователь должен быть добавлен в группу adm.
 
-* Пользователь был создан путем выполнения команды "sudo useradd strn":
+* Пользователь был создан путем выполнения команды "sudo useradd strn": <br>
 ![Creating a user](Screenshots/task_two_create_a_user.png)
 
 * Пользователь был добавлен в группу adm, выполнив команду "sudo usermod -a -G adm strn";
@@ -21,8 +21,9 @@
 
 * Сначала установите необходимые инструменты net-tools, выполнив команду "sudo apt install net-tools".
 
-* Имя машины было установлено выполнением команды "hostnamectl set-hostname user-1":
+* Имя машины было установлено выполнением команды "hostnamectl set-hostname user-1": <br>
 ![hostnameuser](Screenshots/hostnameuser.png)
+
 * После перезагрузки системы обновить имя пользователя, выполнив команду "shutdown -r now".
 
 * Часовой пояс был установлен выполнением команды "sudo timedatectl set-timezone Europe/Moscow":
@@ -48,8 +49,7 @@
 * Внешний IP-адрес - 185.165.160.236;
 
 * Выведите на экран внутренний IP-адрес шлюза, он же ip-адрес по умолчанию (gw), выполнив команду "ip route | grep default":
-![Display the internal IP address]
-(Screenshots/task_three_internal_ip_address.png)
+![Display the internal IP address](Screenshots/task_three_internal_ip_address.png)
 
 * Задать статичные (заданные вручную, а не полученные от DHCP сервера) настройки ip, gw, dns (использовать публичный DNS серверы, например 1.1.1.1 или 8.8.8.8). Для этого необходимо выполнить команду "sudo nano /etc/netplan/00-unstaller-config.yaml":
 * Установка статических настроек ip, gw, dns путем редактирования файла; 
@@ -83,7 +83,7 @@
 
 * Измените имя хоста ОС через пользователя, созданного в части 2, выполнив команду "sudo hostnamectl set-hostname estrina";
 
-* Отобразите новое имя хоста, выполнив команду "hostname":
+* Отобразите новое имя хоста, выполнив команду "hostname": <br>
 ![Display new hostname](Screenshots/task_five_new_hostname.png)
 
 ## Part 6. Установка и настройка службы времени:
@@ -137,30 +137,30 @@
 
 * Записать в файл "Black Eyed Peas";
 
-* Найти в файле "Black":
+* Найти в файле "Black": <br>
 ![Search in file with NANO](Screenshots/task_seven_search_in_file_with_nano.png)
 
-* Заменить "Black" на "White":
+* Заменить "Black" на "White": <br>
 ![Replace in file with NANO](Screenshots/task_seven_replace_in_file_with_nano.png)
 
 * Открыть файл с помощью редактора VIM, выполнив команду "vim test_vim.txt";
 
 * Записать в файл "Black Eyed Peas";
 
-* Найти в файле "Black":
-![Search in file with VIM](Screenshots/task_seven_search_in_file_with_vim.png)
+* Найти в файле "Black": <br>
+![Search in file with VIM](Screenshots/task_seven_search_in_file_with_vim.png)<br>
 
-* Заменить "Black" на "White":
+* Заменить "Black" на "White": <br>
 ![Replace in file with VIM](Screenshots/task_seven_replace_in_file_with_vim.png)
 
 * Открыть файл с помощью редактора JOE, выполнив команду "joe test_joe.txt";
 
 * Записать в файл "Black Eyed Peas";
 
-* Найти в файле "Black":
+* Найти в файле "Black": <br>
 ![Search in file with JOE](Screenshots/task_seven_search_in_file_with_joe.png)
 
-* Заменить "Black" на "White":
+* Заменить "Black" на "White": <br>
 ![Replace in file with JOE](Screenshots/task_seven_replace_in_file_with_joe.png)
 
 ## Part 8. Установка и базовая настройка сервиса SSHD:
@@ -173,7 +173,7 @@
 
 * Откройте файл sshd_config, выполнив команду "sudo nano /etc/ssh/sshd_config";
 
-* Изменить в строку "Port 22" на "Port 2022":
+* Изменить в строку "Port 22" на "Port 2022": <br>
 ![port 2022](Screenshots/port22.png)
 
 * Показать наличие процесса sshd, выполнив команду "ps -C sshd":
@@ -191,7 +191,7 @@
   
 * Необходимо установить net-tools, выполнив команду "sudo apt install net-tools";
 
-* Используя команду "netstat -tan":
+* Используя команду "netstat -tan": <br>
 ![Display netstat](Screenshots/task_eight_netstat.png)
     
 * Объясните смысл ключей -tan, значение каждого выходного столбца, значение 0.0.0.0. в отчете:
@@ -222,27 +222,27 @@
   * Pid процесса, занимающего больше всего : процессорного времени: 4180;
 
 * Htop отсортирован по:
-  * PID:
+  * PID: <br>
   ![Sorted PID](Screenshots/task_nine_sorted_pid.png)
 
-  * PERCENT_CPU:
+  * PERCENT_CPU: <br>
   ![Sorted PERCENT_CPU](Screenshots/task_nine_sorted_percent_cpu.png)
 
-  * PERCENT_MEM:
+  * PERCENT_MEM: <br>
   ![Sorted PERCENT_MEM](Screenshots/task_nine_sorted_percent_mem.png)
 
-  * TIME:
+  * TIME: <br>
   ![Sorted TIME](Screenshots/task_nine_sorted_time.png)
 
-  * Filtered sshd process:
+  * Filtered sshd process: <br>
   ![Sshd process](Screenshots/task_nine_filtered_sshd.png) 
 
-  * With the syslog process found by searching:
+  * With the syslog process found by searching: <br>
   ![Display syslog](Screenshots/task_nine_find_syslog.png)
 
  * Нажмите комбинацию "Shift" + "s" для редактирования строки htop после добавления clock и hostname, в конце нажмите "esc";
 
-  * Отображение с добавленными hostname, clock и uptime:
+  * Отображение с добавленными hostname, clock и uptime: <br>
   ![Display hostname](Screenshots/task_nine_hostname.png)
 
 ## Part 10. Использование утилиты fdisk:
@@ -282,7 +282,7 @@
 * Вывести размер папок /home, /var, /var/log командой "sudo du -s --block-size=1 /var/log /var /home"
 ![Display size of /home](Screenshots/task_twelve_home.png)
 
-* В человекочитаемом виде "sudo du -sh /var/log /var /home":
+* В человекочитаемом виде "sudo du -sh /var/log /var /home": <br>
 ![Display all of /var/log](Screenshots/task_twelve_varlog.png)
 
 * Вывести размер всего содержимого в /var/log (не общее, а каждого вложенного элемента, используя *)
@@ -293,9 +293,9 @@
 * Установите ncdu, выполнив команду "sudo apt-get install ncdu":
 ![Install ncdu](Screenshots/task_thirteen_install_ncdu.png)
 
-* Вывести размер папок /home, /var, /var/log.:
-![Check size of var/log](Screenshots/task_home.png)
-![Check size of var/log](Screenshots/task_var.png)
+* Вывести размер папок /home, /var, /var/log:
+![Check size of var/log](Screenshots/task_home.png) <br>
+![Check size of var/log](Screenshots/task_var.png) <br>
 ![Check size of var/log](Screenshots/var_log.png)
 
 ## Part 14. Работа с системными журналами:
@@ -315,7 +315,7 @@
 
 * Планируем задачу командой "crontab -e"
 
-* В nano приписываем "*/2 * * * * uptime"
+* В nano приписываем "*/2 * * * * uptime" <br>
 ![cron_jobs_ex](Screenshots/cron_uptime.png)
 
 * Командой "crontab -l" выводим список установленых задач:
@@ -325,5 +325,5 @@
 ![cron_jobs_list](Screenshots/task_fiveteen_cron_job_list.png)
 
 * Командой "crontab r" удаляем все запланированые задачи,
-Проверяем список задач ещё раз:
+Проверяем список задач ещё раз: <br>
 ![cron_jobs_list](Screenshots/task_fiveteen_cron_remove_jobs.png)
