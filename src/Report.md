@@ -234,10 +234,10 @@
   * TIME: <br>
   ![Sorted TIME](Screenshots/task_nine_sorted_time.png)
 
-  * Filtered sshd process: <br>
+  * SSHD: <br>
   ![Sshd process](Screenshots/task_nine_filtered_sshd.png) 
 
-  * With the syslog process found by searching: <br>
+  * с процессом syslog, найденным, используя поиск: <br>
   ![Display syslog](Screenshots/task_nine_find_syslog.png)
 
  * Нажмите комбинацию "Shift" + "s" для редактирования строки htop после добавления clock и hostname, в конце нажмите "esc";
